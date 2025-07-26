@@ -1,0 +1,43 @@
+
+body {
+  background-color: bisque;
+  font-family: 'Courier New', Courier, monospace;
+}
+.box {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.box img {
+  height: 93%;
+  width: 93%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.sc {
+  font-size: 8vh;
+  font-weight: bold;
+}
+
+.base {
+  font-size: 4vh;
+  text-align: center;
+}
+.mv {
+  transition: border 0.3s ease;
+}
+
+.mv:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
