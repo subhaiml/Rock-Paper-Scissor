@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 font-mono">
+  <header class="bg-blue-950 text-white text-center text-3xl font-semibold py-4 shadow-xl">
+    Rock Paper Scissor
+  </header>
+
+  <section class="flex justify-center items-center space-x-12 mt-10">
+    <div id="rock" class="box cursor-pointer transition-transform hover:scale-110">
+      <img src="images/rock.png" alt="Rock" class="w-24 h-24" />
+    </div>
+    <div id="paper" class="box cursor-pointer transition-transform hover:scale-110">
+      <img src="images/paper.png" alt="Paper" class="w-24 h-24" />
+    </div>
+    <div id="scissors" class="box cursor-pointer transition-transform hover:scale-110">
+      <img src="images/scissors.png" alt="Scissors" class="w-24 h-24" />
+    </div>
+  </section>
+  <section id="scorebd" class="flex justify-center items-center gap-8 mt-8 text-xl">
+    <div class="user text-center">
+      <p id="us" class="text-4xl font-bold text-blue-700">0</p>
+      <p>You</p>
+    </div>
+    <div class="comp text-center">
+      <p id="cs" class="text-4xl font-bold text-red-700">0</p>
+      <p>Computer</p>
+    </div>
+  </section>
+
+  <div class="flex justify-center mt-6">
+    <p class="mv bg-black text-white text-base px-6 py-2 rounded-md shadow">
+      Play your move
+    </p>
+  </div>
+  <div class="flex justify-center mt-6">
+    <button id="rs" class="bg-red-700 hover:bg-red-800 transition-colors text-white text-lg py-2 px-6 rounded-md shadow">
+      RESET
+    </button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
